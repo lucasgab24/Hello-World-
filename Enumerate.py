@@ -26,7 +26,6 @@ palavra = "Python"
 for i, letra in enumerate(palavra):
  print(f"{i}: {letra}")
  
- numeros = [1, 2, 3, 4, 5]
+numeros = [1, 2, 3, 4, 5]
 for i, numero in enumerate(numeros, start=1):
  print(f"{i}: {numero}")
- 
