@@ -18,11 +18,15 @@ print("\nValores digitados:", valores)
 print(f"Maior valor: {maior} (posições: {posicoes_maior})")
 print(f"Menor valor: {menor} (posições: {posicoes_menor})")
 
-'''frutas = ['maçã', 'banana', 'laranja']
+frutas = ['maçã', 'banana', 'laranja']
 for i, fruta in enumerate(frutas):
- print(f"{i}: {fruta}")'''
+ print(f"{i}: {fruta}")
 
 palavra = "Python"
 for i, letra in enumerate(palavra):
  print(f"{i}: {letra}")
+ 
+ numeros = [1, 2, 3, 4, 5]
+for i, numero in enumerate(numeros, start=1):
+ print(f"{i}: {numero}")
  
