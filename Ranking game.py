@@ -1,17 +1,18 @@
 import random
 import time
 import operator
-jogo = {'jogador1' : random.randint(1, 6),
-    'jogador2' : random.randint(1, 6),
-    'jogador3' : random.randint(1, 6),
-    'jogador4' : random.randint(1, 6)}
+game = {'player1' : random.randint(1, 6),
+    'player2' : random.randint(1, 6),
+    'player3' : random.randint(1, 6),
+    'player4' : random.randint(1, 6)}
 ranking = list()
-print('valores sorteados: ')
-for k, v in jogo.items():
-    print(f'{k} tirou {v} no dado')
+print('drawn values: ')
+for k, v in game.items():
+    print(f'{k} --> {v}')
     time.sleep(1)
-ranking = sorted(jogo.items(), key=operator.itemgetter(1), reverse=True)
-print('RAKING DOS JOGADORES')
+ranking = sorted(game.items(), key=operator.itemgetter(1), reverse=True)
+print('RAKING')
 for i, v in enumerate(ranking):
-    print(f'   {i+1}° lugar: {v[0]} com {v[1]}.')
+    print(f'   {i+1}° : {v[0]} with number {v[1]}.')
     time.sleep(1)
+print("Bye Bye")
